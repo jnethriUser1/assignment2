@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+
+		<!-- Website Title & Description for Search Engine purposes -->
+		<title></title>
+		<meta name="description" content="">
+
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<!-- Bootstrap CSS -->
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+		<!-- Custom CSS -->
+		<link href="includes/css/styles.css" rel="stylesheet">
+
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+	</head>
+	<body>
+		<div class="container" id="main">
+			<nav class="navbar navbar-default navbar-fixed-top">
+			      <div class="container">
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="navbar-brand" href="#">Assignment 2</a>
+			        </div>
+			        <div id="navbar" class="navbar-collapse collapse">
+			          <ul class="nav navbar-nav">
+			            <li><a href="customer_view.php">Home</a></li>
+			            <li><a href="customer_view.php">View</a></li>
+			            <li class="active"><a href="customer_add.html">Add</a></li>
+			          </ul>
+			          <ul class="nav navbar-nav navbar-right">
+			            <li class='dropdown'>
+			              <a class="dropdown-toggle" data-toggle="dropdown" href="#">My Account
+			                  <span class="caret"></span></a>
+			                       <ul class="dropdown-menu">
+			                          <li><a href="#">Login</a></li>
+			                          <li><a href="#">Settings</a></li>
+			                      </ul>
+			                </li>
+			          </ul>
+			        </div>
+			      </div>
+			    </nav>
+
+
+			<div class="row" id="form1">
+				<div class="col-sm-12">
+					<h2>Add A Customer</h2>
+						<form class="form-horizontal" role="form" action="customer_add.php" method="post">
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="firstName">First Name:</label>
+							  <div class="col-sm-10">
+							    <input type="text" class="form-control" name="firstname" id="firstName" placeholder="Enter first name">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="lastName">Last or Company:</label>
+							  <div class="col-sm-10">
+							    <input type="text" class="form-control" name="lastname" id="lastName" placeholder="Enter last name or company name">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="address">Address:</label>
+							  <div class="col-sm-10">
+							    <input type="text" class="form-control" name="address" id="address" placeholder="Enter address">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="city">City:</label>
+							  <div class="col-sm-10">
+							    <input type="text" class="form-control" name="city" id="city" placeholder="Enter city">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="state">State:</label>
+							  <div class="col-sm-10">
+							    <input type="text" class="form-control" name="state" id="state" placeholder="Enter state">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="zip">Zip:</label>
+							  <div class="col-sm-10">
+							    <input type="number" class="form-control" name="zip" id="zip" placeholder="Enter zip">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="email">Email:</label>
+							  <div class="col-sm-10">
+							    <input type="email" class="form-control" name="email" id="email" placeholder="Enter email">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <label class="control-label col-sm-2" for="phone">Phone:</label>
+							  <div class="col-sm-10">
+							    <input type="number" class="form-control" name="phone" id="phone" placeholder="Enter phone">
+							  </div>
+							</div>
+
+							<div class="form-group">
+							  <div class="col-sm-offset-2 col-sm-10">
+							    <button type="submit" class="btn btn-default">Submit</button>
+							  </div>
+							</div>
+						</form><!-- end form -->
+				</div><!-- end col-sm-12 -->
+			</div><!-- end form1 -->
+
+		</div><!-- end container -->
+
+		<hr>
+
+		<footer>
+
+		</footer>
+
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.12.0.min.js"><\/script>')</script>
+
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+
+	<!-- Custom JS -->
+	<script src="includes/js/script.js"></script>
+
+	</body>
+</html>
