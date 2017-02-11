@@ -1,5 +1,5 @@
 <?php // customer_add.php
-
+//edit
 // require_once 'login.php';
 
 // login.php
