@@ -11,7 +11,6 @@ $pw = 'steinway';
 $conn = new mysqli($hn, $un, $pw, $db);
 if ($conn->connect_error) die($conn->connect_error);
 
-// Escape user inputs for security
 $firstName = mysqli_real_escape_string($conn, $_POST['firstname']);
 $lastName = mysqli_real_escape_string($conn, $_POST['lastname']);
 $address = mysqli_real_escape_string($conn, $_POST['address']);
